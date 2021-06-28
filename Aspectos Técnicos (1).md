@@ -1,4 +1,6 @@
-﻿# Aspectos técnicos 
+﻿# Documentación Oficial
+ 
+ # Aspectos técnicos 
 En este apartado hablaremos sobre los aspectos técnicos del software utilizado para la creación del programa y demás especificaciones
 
 ###  Software
