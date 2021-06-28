@@ -35,3 +35,44 @@ https://dev.mysql.com/downloads/windows/installer/8.0.html).
 Al haberse instalado, es necesario tomar en cuenta que debe seleccionar 3 productos los cuales son: Mysql server 8.0.25 y en aplicaciones seleccionar Mysql workbench 8.0.25 y en documentacion siempre 8.0.25
 
 Para el proyecto final hicimos todo mediante la terminal de visual studio el cual a crear las respectivas clases con su constructor, continuamos a pasarla a la  base de datos creada, y automaticamente al conectarla con la respectiva base de proyecto final todo lo trabajado en el programa visual studio se creo en la base de datos ( incluyendo tablas y valores).
+
+# Patrones de Diseño
+-Implementación de interfaz gráfica
+La interfaz gráfica del programa consiste en una ventana global o formulario “Login.cs”,  que es el encargado de cargar distintos controles de usuario los cuales son:
+#### - Login.cs
+contiene tres botones, los cuales nos ayudan a cambiar entre Login controls.
+
+#### - CrearCita.cs
+contiene textbox donde podra insertas los datos para el respectivo paciente y botones, para guardar los datos y otro para cancelar el proceso, asi mismo para modificar la cita si fuese necesario.
+
+#### - Username.cs
+contiene textbox que nos ayuda a completar la informcaion del empleado que manejara la cabina durante la jornada.
+
+Para controlar el flujo de datos en el programa y a la base de datos se manejan las
+siguientes clases:
+1. 20210627035638_tabla.cs
+2. 20210627035613_init.cs
+3. ProyectoContextModelSnapshot.cs
+#### Manejo de clases en modelo
+Para manejar el modelo del programa se utilizan las siguientes clases:
+| CLASE  | CLASE | CLASE |
+| :---         |     :---:      |          ---: |
+|  1. Cabin.cs |   5. Dosi.cs    |   9. TypeVaccine.cs   |
+| 2. DateVaccine.cs    |    6. Employee.cs  |     10. Pacient.cs  |
+| 3. DayVaccine.cs    | 7. Index_cabin.cs    |   11. SideEffect.cs     |
+| 4. Disease.cs    | 8. InstitutionObjective.cs    |   12. TypeEmployee.cs   |
+
+#### Tipos de error
+Controlados
+los diferentes tipos de errores que consideramos y controlamos en
+nuestro programa son:
+- Dejar vacío el nickname o solo con espacios (User.cs)
+- Minimizar la ventana con el juego ejecutándose 
+- Error al obtener datos de la base de datos 
+- Error al insertar datos a la base de datos 
+
+# Manual de Usuario
+El proyecto realizado con mi equipo, funciona como gestor para la realizacion de citas a las personas que quieran ponerse la vacuna covid-19
+este programa esta capacitado para tomar la información tanto del paciente, como para el empleado que maneja dicho programa, guardando esta información en una base de datos.
+esta formado por una ventana principal donde el empleado puede poner sus credenciales o si en dado caso no cuenta con ellas, puede tener acceso a crear un nuevo usuario
+gracias a la ventana principal, contamos con otras dos, una que nos ayudan a gestionar los datos para la creación de cita del paciente y otra para la modificción de credenciales del empleado a cargo de la plataforma si en dado caso este pierde su contraseña, puede volver a recuperar sin necesidad de crear un nuevo usuario.
