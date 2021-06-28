@@ -19,7 +19,7 @@ Dentro de los paquetes externos utilizados en el programa, están los paquetes *
 ﻿# Instalación 
 
 ### Visual Studio 2019 - community
-Visual Studio 2019 - community, nos dirigiremos a su página web o mediante este link para descargar dicha herramienta [Descargar Aquí(https://visualstudio.microsoft.com/es/vs/).
+Visual Studio 2019 - community, nos dirigiremos a su página web o mediante este link para descargar dicha herramienta [Descargar Aquí](https://visualstudio.microsoft.com/es/vs/).
 El cual al instalarse podrá añadir los lenguajes y herramientas a utilizar mediante este IDE.  
 
 >Como observación este IDE requiere de licencia para ser utilizado 
